@@ -64,6 +64,7 @@ namespace Outlook_Work.Windows.Create
                 newReport.ReportContent = richText.Text;
                 newReport.CodeOrder = order.IdOrder;
                 newReport.CodeHeadDepartament = user.Iduser;
+                order.CodeStatus = 1;
                 context.Report.Add(newReport);
                 context.SaveChanges();
             }

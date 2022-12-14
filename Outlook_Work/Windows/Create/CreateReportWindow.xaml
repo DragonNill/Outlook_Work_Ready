@@ -30,7 +30,7 @@
                 <RowDefinition/>
                 <RowDefinition/>
             </Grid.RowDefinitions>
-            <Label x:Name="nameLabel" Content="Формирование отчета" Grid.Column="1" HorizontalAlignment="Center" FontSize="20" Foreground="Black"/>
+            <Label  Margin="5" x:Name="nameLabel" Content="Формирование отчета" Grid.Column="1" HorizontalAlignment="Center" FontSize="20" Foreground="Black"/>
         </Grid>
         <Grid Grid.Row="1">
             <RichTextBox x:Name="contentReportRichTextBox" Margin="15,0,15,15" BorderThickness="1"  BorderBrush="#FF0083FF" FontSize="20" />
