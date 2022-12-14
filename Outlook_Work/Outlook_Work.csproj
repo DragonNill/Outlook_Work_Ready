@@ -171,10 +171,8 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="Models\Entities\Accounting.cs" />
     <Compile Include="Models\Entities\Feedback.cs" />
     <Compile Include="Models\Entities\Order.cs" />
-    <Compile Include="Models\Entities\Orderreportaccounting.cs" />
     <Compile Include="Models\Entities\OutlookWorkDatabaseContext.cs" />
     <Compile Include="Models\Entities\Report.cs" />
     <Compile Include="Models\Entities\Roles.cs" />
