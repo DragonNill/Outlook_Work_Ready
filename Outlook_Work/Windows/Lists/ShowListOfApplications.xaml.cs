@@ -76,6 +76,12 @@ namespace Outlook_Work.Windows.Lists
                 case 3:
                     ordersList = ordersList.Where(u => u.CodeStatus == 3).ToList();
                     break;
+                case 4:
+                    ordersList = ordersList.Where(u => u.CodeStatus == 4).ToList();
+                    break;
+                case 5:
+                    ordersList = ordersList.Where(u => u.CodeStatus == 5).ToList();
+                    break;
             }
             switch(sortingComboBox.SelectedIndex)
             {
@@ -97,9 +103,11 @@ namespace Outlook_Work.Windows.Lists
         private void FullComboBoxes()
         {
             filterComboBox.Items.Add("Все");
-            filterComboBox.Items.Add("Готово");
-            filterComboBox.Items.Add("Отказано");
-            filterComboBox.Items.Add("В процессе");
+            List<Status> status = context.Status.ToList();
+            foreach(Status statusItem in status)
+            {
+                filterComboBox.Items.Add(statusItem.StatusName);
+            }
 
             sortingComboBox.Items.Add("Без сортировки");
             sortingComboBox.Items.Add("По дате ↑");

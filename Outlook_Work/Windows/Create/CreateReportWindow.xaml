@@ -33,7 +33,7 @@
             <Label  Margin="5" x:Name="nameLabel" Content="Формирование отчета" Grid.Column="1" HorizontalAlignment="Center" FontSize="20" Foreground="Black"/>
         </Grid>
         <Grid Grid.Row="1">
-            <RichTextBox x:Name="contentReportRichTextBox" Margin="15,0,15,15" BorderThickness="1"  BorderBrush="#FF0083FF" FontSize="20" />
+            <RichTextBox Style="{DynamicResource MaterialDesignTextBoxBase}" x:Name="contentReportRichTextBox" Margin="15,0,15,15" BorderThickness="1"  BorderBrush="#FF0083FF" FontSize="20" KeyDown="contentReportRichTextBox_KeyDown" />
         </Grid>
         <Grid Grid.Row="2">
             <Grid.ColumnDefinitions>
@@ -41,6 +41,7 @@
                 <ColumnDefinition/>
                 <ColumnDefinition/>
             </Grid.ColumnDefinitions>
+            <CheckBox x:Name="readyorNotReadyCheckBox" FontSize="12" Foreground="Black" Checked="readyorNotReadyCheckBox_Checked"  Width="120" Margin="5">Выполнено</CheckBox>
             <Button Grid.Column="1" Style="{DynamicResource MaterialDesignFlatButton}" x:Name="makeButton" Content="Сформировать отчет" Foreground="Black" Cursor="Hand" Height="50" FontSize="20" BorderBrush="#FF0083FF" BorderThickness="1"  Margin="5,5,5,10" Click="makeButton_Click"/>
             <Button Grid.Column="2" Style="{DynamicResource MaterialDesignFlatButton}" x:Name="backButton" Content="Назад" Foreground="Black" Cursor="Hand" Height="50" FontSize="20" BorderBrush="#FF0083FF" BorderThickness="1"  Margin="5,5,5,10" Click="backButton_Click"/>
         </Grid>

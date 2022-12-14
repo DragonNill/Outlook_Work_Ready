@@ -36,7 +36,7 @@
             <Button Style="{DynamicResource MaterialDesignFlatButton}" Height="35" x:Name="listForAdminButton" Content="Просмотр списка отзывов" 
                      Foreground="Black" Cursor="Hand" FontSize="24" BorderBrush="#FF0083FF" BorderThickness="1" MaxWidth="500" Margin="5"  IsEnabled="False" Visibility="Hidden" Click="listForAdminButton_Click"/>
             <Button Style="{DynamicResource MaterialDesignFlatButton}" Height="35" x:Name="exitForAdminButton" Content="Выйти" 
-                     Foreground="Black" Cursor="Hand" FontSize="24" BorderBrush="#FF0083FF" BorderThickness="1" MaxWidth="500" Margin="5" IsEnabled="False" Visibility="Hidden"/>
+                     Foreground="Black" Cursor="Hand" FontSize="24" BorderBrush="#FF0083FF" BorderThickness="1" MaxWidth="500" Margin="5" IsEnabled="False" Visibility="Hidden" Click="exitForAdminButton_Click"/>
         </StackPanel>
     </Grid>
 </Window>

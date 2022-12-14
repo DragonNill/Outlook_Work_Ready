@@ -59,7 +59,7 @@ namespace Outlook_Work.Models.Entities
                 entity.Property(e => e.FeedbackContent)
                     .IsRequired()
                     .HasColumnName("feedbackContent")
-                    .HasColumnType("varchar(255)")
+                    .HasColumnType("varchar(750)")
                     .HasCharSet("utf8mb4")
                     .HasCollation("utf8mb4_0900_ai_ci");
 
@@ -96,7 +96,7 @@ namespace Outlook_Work.Models.Entities
                 entity.Property(e => e.OrderContent)
                     .IsRequired()
                     .HasColumnName("orderContent")
-                    .HasColumnType("varchar(255)")
+                    .HasColumnType("varchar(750)")
                     .HasCharSet("utf8mb4")
                     .HasCollation("utf8mb4_0900_ai_ci");
 
@@ -146,7 +146,7 @@ namespace Outlook_Work.Models.Entities
                 entity.Property(e => e.ReportContent)
                     .IsRequired()
                     .HasColumnName("reportContent")
-                    .HasColumnType("varchar(255)")
+                    .HasColumnType("varchar(750)")
                     .HasCharSet("utf8mb4")
                     .HasCollation("utf8mb4_0900_ai_ci");
 

@@ -137,5 +137,10 @@ namespace Outlook_Work.Windows.Menus
         {
             new ShowListOfReports(user, 1).ShowDialog();
         }
+
+        private void exitForAdminButton_Click(object sender, RoutedEventArgs e)
+        {
+            Close();
+        }
     }
 }
