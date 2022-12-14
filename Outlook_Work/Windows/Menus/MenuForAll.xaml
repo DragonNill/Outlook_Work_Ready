@@ -1,0 +1,42 @@
+﻿<Window x:Class="Outlook_Work.Windows.Menus.MenuForAll"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+         TextElement.FontWeight="Regular"
+         TextElement.FontSize="13"
+         TextOptions.TextFormattingMode="Ideal"
+         TextOptions.TextRenderingMode="Auto"
+         Background="{DynamicResource MaterialDesignPaper}"
+         FontFamily="{DynamicResource MaterialDesignFont}"
+         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        mc:Ignorable="d"      
+        Title="Меню" MaxHeight="500" MaxWidth="900" MinHeight="350" MinWidth="700" Height="450" Width="800" Loaded="Window_Loaded">
+
+
+    <Grid>
+        <StackPanel Orientation="Vertical"  HorizontalAlignment="Center" VerticalAlignment="Center">
+            
+            <StackPanel VerticalAlignment="Center" Orientation="Horizontal" HorizontalAlignment="Center">
+                <Label HorizontalAlignment="Center" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" VerticalAlignment="Center" Content="Добро пожаловать " FontSize="30" Foreground="Black"/>
+                <Label HorizontalAlignment="Center" VerticalAlignment="Center" x:Name="nameSurnamecLabel" Content="" FontSize="30" Foreground="Black"/>
+            </StackPanel>
+            
+
+            
+            <Button Style="{DynamicResource MaterialDesignFlatButton}" Height="35" x:Name="listofapplicationsButton" Content="Личный список заявок" 
+                    Foreground="Black" Cursor="Hand" FontSize="24" BorderBrush="#FF0083FF" BorderThickness="1" MaxWidth="500" Margin="5" Click="listofapplicationsButton_Click"/>
+            <Button Style="{DynamicResource MaterialDesignFlatButton}" Height="35" x:Name="workingwithapplicationButton" Content="Оформить заявку" 
+                     Foreground="Black" Cursor="Hand" FontSize="24" BorderBrush="#FF0083FF" BorderThickness="1" MaxWidth="500" Margin="5" Click="workingwithapplicationButton_Click"/>
+            <Button Style="{DynamicResource MaterialDesignFlatButton}" Height="35" x:Name="personalinformationButton" Content="Личная информация" 
+                    Foreground="Black" Cursor="Hand" FontSize="24" BorderBrush="#FF0083FF" BorderThickness="1" MaxWidth="500" Margin="5" Click="personalinformationButton_Click_1"/>
+            <Button Style="{DynamicResource MaterialDesignFlatButton}" Height="35" x:Name="exitButton" Content="Выйти" 
+                     Foreground="Black" Cursor="Hand" FontSize="24" BorderBrush="#FF0083FF" BorderThickness="1" MaxWidth="500" Margin="5" Click="exitButton_Click"/>
+            <Button Style="{DynamicResource MaterialDesignFlatButton}" Height="35" x:Name="listForAdminButton" Content="Просмотр списка отзывов" 
+                     Foreground="Black" Cursor="Hand" FontSize="24" BorderBrush="#FF0083FF" BorderThickness="1" MaxWidth="500" Margin="5"  IsEnabled="False" Visibility="Hidden" Click="listForAdminButton_Click"/>
+            <Button Style="{DynamicResource MaterialDesignFlatButton}" Height="35" x:Name="exitForAdminButton" Content="Выйти" 
+                     Foreground="Black" Cursor="Hand" FontSize="24" BorderBrush="#FF0083FF" BorderThickness="1" MaxWidth="500" Margin="5" IsEnabled="False" Visibility="Hidden"/>
+        </StackPanel>
+    </Grid>
+</Window>
