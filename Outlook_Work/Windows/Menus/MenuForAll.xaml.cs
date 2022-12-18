@@ -49,7 +49,7 @@ namespace Outlook_Work.Windows.Menus
             {
                 listofapplicationsButton.Content = "Просмотреть список заявок";
                 workingwithapplicationButton.Content = "Просмотреть список пользователей";
-                exitButton.Content = "Просмотр список отчетов";
+                exitButton.Content = "Просмотр списка отчетов";
 
                 exitForAdminButton.IsEnabled = true;
                 listForAdminButton.IsEnabled = true;

@@ -47,13 +47,15 @@ namespace Outlook_Work.Windows.CreateApplication
                 order.CodeStatus = 4;
                 order.CodeEmployeer = user.Iduser;
 
+
+                MessageBox.Show("Вы успешно создали заявку","Уведомление",MessageBoxButton.OK,MessageBoxImage.Information);
                 context.Order.Add(order);
                 context.SaveChanges();
                 Close();
             }
             else
             {
-                MessageBox.Show("Пожалуйста заполните поля");
+                MessageBox.Show("Пожалуйста заполните поля","Предупреждние",MessageBoxButton.OK,MessageBoxImage.Warning);
             }
         }
 

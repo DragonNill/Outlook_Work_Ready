@@ -185,6 +185,10 @@ namespace Outlook_Work.Windows.Infomation
                     Close();
                 }
             }
+            else
+            {
+                MessageBox.Show("Заполните все поля, пожалуйста","Предупреждение",MessageBoxButton.OK,MessageBoxImage.Warning);
+            }
         }
 
         private void deleteButton_Click(object sender, RoutedEventArgs e)
